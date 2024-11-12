@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+span  {
+    z-index: -1;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    padding-top: 20px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    position: fixed;
+    background-color: black;
+    
+}
+.headerdiv {
+    display: flex;
+    width: 1150px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+nav a{
+    font-size: 2.3em;
+    color: white;
+    padding-left: 40px;
+    height: 30px;
+    transition: .5s ease;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #b74b4b;
+    transition: .5s ease;
+}
+.active {
+    color: #b74b4b;
+    text-decoration: underline;
+}
+
+.logo {
+    color: #b74b4b;
+    font-size: 3.2em;
+    padding-right: 100px;
+    padding-left: -70px;
+}
+
+img {
+    border-radius: 50%;
+    height: 690px;
+    margin-left: -20px;
+}
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+h1 {
+    font-size: 4.0em;
+}
+h1 span {
+    color: #b74b4b;
+}
+
+.typing-text {
+    font-size: 4.0em;
+}
+
+.home-content p {
+    font-size: 1.5em;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+#toggle {
+    font-size: 30px;
+    position: fixed;
+    right:  100%;
+}
+#toggle:hover {
+    transition: .3s ease;
+    color: #b74b4b;
+}
+
+#close{
+    font-size: 30px;
+    position: fixed;
+    right:  100%;
+}
+
+.social-icons  {
+    display: flex;
+    font-size: 30px;
+    color: white; 
+    z-index: -1;
+}
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+    width: 50px;
+    height: 50px;
+    color: red;
+    transition: .5s ease;
+    border: 2px solid red;
+    border-radius: 50%;
+    transform: translateY(-5px);
+} 
+
+.social-icons a:hover {
+    transition: .5s ease;
+    background-color: red;
+    color: black;
+    transform: translateY(-10px);
+}
+
+.btn {
+    color: red;
+    font-size: 25px;
+    border: 2px solid red;
+    height: 50px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: .5s ease;
+    align-items: center;
+    
+}
+
+.btn:hover {
+    background-color: red;
+    color: black;
+    transform: translateY(-5px);
+}
+
+
+
+/*services style*/
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Services {
+    background-color: rgb(24, 24, 24);
+    height: 600px;
+    width: 100vw;
+    display: grid;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.servicesDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div1 {
+    display: flex;
+    
+}
+
+.div1 div {
+    width: 350px;
+    height: 230px;
+    margin: 10px;
+    padding: 9px;
+    border-radius: 20px;
+    background-color: black;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+
+.div1 div h3 {
+    font-size: 18px;
+    color: red;
+}
+
+.div1 div p {
+    color: white;
+    font-size: 15px;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+
+/*contact's style*/
+
+#Contact {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#Contact  h2 span {
+    color: orangered;
+}
+
+.contactme {
+    width: 50vw;
+    height: 50px;
+    border: 1px solid orangered;
+    background: none;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+}
+
+#text {
+    background: none;
+    width: 50vw;
+    height: 200px;
+    border: 1px solid orangered;
+    margin-top: 30px;
+    border-radius: 20px;
+    color: white;
+    padding: 15px;
+    
+}
+.btn3 {
+    display: grid;
+    justify-content: center;
+}
+
+.btn2 {
+    display: grid;
+    border: 1px solid orangered;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: orangered;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.btn2:hover {
+    background-color: orangered;
+    color: black;
+    transition: .5s ease;
+}
+.footerdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 180px;
+    margin-bottom: 40px;
+    background-color: orangered;
+}
+
+.links2{
+    display: flex;
+    justify-content: center;
+}
+
+.links2 a {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links div, .links2 {
+    display: flex;
+}
+
+
+
+.links2 a:hover {
+    color: red;
+    background-color: black;
+    transition: .5s ease;
+}
+
+.links a{
+    color: black;
+    font-size: 20px;
+    margin: 25px;
+}
+
+.show-menu {
+    left: 0%;
+    right: unset;
+    right: 1000%;
+}
+
+
+@keyframes cursor {
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@keyframes words {
+    0%, 20%{
+        content: "Web Developer";
+    }
+    21%, 40%{
+        content: "Developer";
+    }
+    41%, 60%{
+        content: "Web Designer";
+    }
+    81%, 100%{
+        content: "Script Writer";
+    }
+}
+
+
+@media screen and (max-width: 1250px){
+    header {
+        height: 70px;
+    }
+    .headerdiv nav {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        background-color: black;
+        width: 40%;
+        height: 100%;
+        padding: 7.5rem 3.5rem 0;
+        border-right: 2px solid red;
+        transition: right .4s;
+    }
+    .headerdiv {
+        width: 750px;
+    }
+    img {
+        height: 550px;
+        margin-top: 40px;
+    }
+    .logo{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .home-content p {
+        max-width: 400px;
+    }
+    .home {
+        display: flex;
+        justify-content: center;
+    }
+    #toggle {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        right: 0;
+        margin-right: 60px;
+    }
+
+    .Services {
+        height: 700px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div1 div {
+        width: 260px;
+        height: 270px;
+    }
+    #nav_close {
+        position: fixed;
+        left: -100%;
+        color: white;
+    }
+    
+    
+}
+
+@media screen and (max-width: 900px) {
+    img {
+        height: 45vw;
+        margin: 20px;
+    }
+    .headerdiv {
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .typing-text {
+        font-size: 2.5em;
+    }
+    .home-content p {
+        font-size: 1.2em;
+        margin-right: 20px;
+    }
+    .social-icons{
+        font-size: 20px;
+    }
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+        margin: 20px 5px 10px 5px;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+    #toggle {
+        position: fixed;
+        right: 0;
+        margin-right: 60px;
+    }
+    #nav-toggle {
+        display: flex;
+        justify-content: flex-end;
+        right: 0;
+    }
+    .servicesDiv {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .div1 {
+        flex-direction: column;
+    }
+    .div1 div {
+        width: 42vw;
+        height: 25vh; 
+    }
+
+    .contactme {
+        width: 80vw;
+    }
+    #text {
+        width: 80vw;
+    }
+
+    .links div a {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .div1 div p {
+        font-size: 10px;
+    }
+    .div1 div {
+        width: 36vw;
+        height: 22vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+        .home {
+            flex-direction: column;
+            display: grid;
+            justify-content: center;
+        }
+        .logo {
+            font-size: 2.5em;
+            position: fixed;
+            background-color: black;
+            width: 100%;
+            left: 0;
+            top: 0;
+            padding: 10px 25px;
+        }
+        .home-img {
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 2.0em;
+        }
+        .Services h2 {
+            font-size: 3.5em;
+        }
+        h2{
+            font-size: 3.5em;
+        }
+        .typing-text {
+            font-size: 2.0em;
+        }
+        .social-icons a {
+            width: 30px;
+            height: 30px;
+            margin: 20px 5px 10px 5px;
+            font-size: smaller;
+        }
+        .btn {
+            width: 80px;
+            height: 30px;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        #toggle {
+            margin-right: 25px;
+            font-size: 25px;
+        }
+
+        #text {
+            width: 70vw;
+        }
+        #Contact div {
+            display: grid;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .contactme {
+            width: 70vw;
+        }
+        .btn3 {
+            
+        }
+        .btn2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .links2 a {
+            font-size: 20px;
+            width: 35px;
+            height: 35px;
+        }
+        .links div a {
+            font-size: 12px;
+            margin: 2vw;
+        } 
+
+        .servicesDiv div div h3{
+            font-size: larger;
+        }
+
+        .servicesDiv div div p {
+            font-size: 9px;
+            margin-top: 5px;
+        }
+        .div1 div {
+            height: 140px;
+        }
+}
+
+@media screen and (max-width:500px) {
+    .servicesDiv div div p {
+        font-size: 8px;
+        margin-top: 5px;
+    }
+    .div1 div {
+        height: 160px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .servicesDiv div div p {
+        font-size: 7.5px;
+        margin-top: 2px;
+    }
+    .div1 div {
+        height: 180px;
+    }
+    .servicesDiv div div h3{
+        font-size: smaller;
+        padding-top: -90px;
+    }
+}
