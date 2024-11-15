@@ -8,6 +8,7 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 html{
@@ -35,17 +36,11 @@ header {
     justify-content: center;
     position: fixed;
     background-color: black;
-    
 }
 .headerdiv {
     display: flex;
     width: 1150px;
-}
-
-nav {
-    display: flex;
     justify-content: space-between;
-    width: 1200px;
 }
 nav a{
     font-size: 2.3em;
@@ -67,8 +62,6 @@ nav a:hover {
 .logo {
     color: #b74b4b;
     font-size: 3.2em;
-    padding-right: 100px;
-    padding-left: -70px;
 }
 
 img {
@@ -127,8 +120,7 @@ h1 span {
 .social-icons  {
     display: flex;
     font-size: 30px;
-    color: white; 
-    z-index: -1;
+    color: white;
 }
 .social-icons a {
     display: flex;
@@ -141,7 +133,6 @@ h1 span {
     transition: .5s ease;
     border: 2px solid red;
     border-radius: 50%;
-    transform: translateY(-5px);
 } 
 
 .social-icons a:hover {
@@ -368,11 +359,9 @@ h2 {
 }
 
 .show-menu {
-    left: 0%;
-    right: unset;
-    right: 1000%;
+    left: 40%;
+    top: 0;
 }
-
 
 @keyframes cursor {
     to{
@@ -401,20 +390,22 @@ h2 {
         height: 70px;
     }
     .headerdiv nav {
-        position: fixed;
+        display: flex;
         flex-direction: column;
-        top: 0;
-        bottom: 0;
-        right: 100%;
         background-color: black;
-        width: 40%;
+        position: fixed;
+        right: 200%;
         height: 100%;
+        width: 60%;
         padding: 7.5rem 3.5rem 0;
-        border-right: 2px solid red;
-        transition: right .4s;
+        overflow: hidden;
+    }
+    .headerdiv nav a {
+        margin-bottom: 10vh;
     }
     .headerdiv {
         width: 750px;
+        justify-content: space-between;
     }
     img {
         height: 550px;
@@ -435,11 +426,8 @@ h2 {
         justify-content: center;
     }
     #toggle {
-        font-size: 30px;
-        cursor: pointer;
-        position: fixed;
-        right: 0;
-        margin-right: 60px;
+        font-size: 30px;  
+        right: 10%;
     }
 
     .Services {
@@ -454,7 +442,7 @@ h2 {
     }
     #nav_close {
         position: fixed;
-        left: -100%;
+        right:  100%;
         color: white;
     }
     
@@ -545,6 +533,17 @@ h2 {
             display: grid;
             justify-content: center;
         }
+        .headerdiv nav {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            position: fixed;
+            right: 200%;
+            height: 100%;
+            width: 100%;
+            padding: 7.5rem 1.0rem 0;
+            font-size: 7px;
+        }
         .logo {
             font-size: 2.5em;
             position: fixed;
@@ -597,9 +596,6 @@ h2 {
         }
         .contactme {
             width: 70vw;
-        }
-        .btn3 {
-            
         }
         .btn2 {
             display: flex;
